@@ -1,0 +1,313 @@
+{
+	"id": "b0ead3cc-7f72-4040-9404-c88a136a5adc",
+	"name": "API Testing Collections",
+	"timestamp": "2024-07-10T15:19:46.591Z",
+	"collection_id": "24943015-3c4382e3-6ec7-4bf3-990f-a085384f39a5",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 44,
+	"delay": "500",
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-07-10T15:19:21.895Z",
+	"totalFail": 16,
+	"results": [
+		{
+			"id": "c648fb89-87e6-40f1-a95c-d509db5ef245",
+			"name": "API Testing Collections",
+			"url": "https://restful-booker.herokuapp.com/booking/4",
+			"time": 288,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 300ms": true,
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"Checkin and checkout dates are in valid date format": true,
+				"Depositpaid is a boolean value": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 300ms": {
+					"pass": 4,
+					"fail": 1
+				},
+				"Response status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Checkin and checkout dates are in valid date format": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Depositpaid is a boolean value": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				2079,
+				286,
+				286,
+				286,
+				288
+			],
+			"allTests": [
+				{
+					"Response time is less than 300ms": false,
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Checkin and checkout dates are in valid date format": true,
+					"Depositpaid is a boolean value": true
+				},
+				{
+					"Response time is less than 300ms": true,
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Checkin and checkout dates are in valid date format": true,
+					"Depositpaid is a boolean value": true
+				},
+				{
+					"Response time is less than 300ms": true,
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Checkin and checkout dates are in valid date format": true,
+					"Depositpaid is a boolean value": true
+				},
+				{
+					"Response time is less than 300ms": true,
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Checkin and checkout dates are in valid date format": true,
+					"Depositpaid is a boolean value": true
+				},
+				{
+					"Response time is less than 300ms": true,
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Checkin and checkout dates are in valid date format": true,
+					"Depositpaid is a boolean value": true
+				}
+			]
+		},
+		{
+			"id": "e4f30116-cb4a-4213-9b0f-83bfbc5e3fe1",
+			"name": "Post",
+			"url": "https://restful-booker.herokuapp.com/booking",
+			"time": 282,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 5
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 5
+				}
+			},
+			"times": [
+				284,
+				287,
+				283,
+				284,
+				282
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Successful POST request": false
+				},
+				{
+					"Status code is 200": false,
+					"Successful POST request": false
+				},
+				{
+					"Status code is 200": false,
+					"Successful POST request": false
+				},
+				{
+					"Status code is 200": false,
+					"Successful POST request": false
+				},
+				{
+					"Status code is 200": false,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "5261856f-9803-4300-b25c-4773285fcd10",
+			"name": "PUT",
+			"url": "https://restful-booker.herokuapp.com/booking/:id",
+			"time": 283,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				284,
+				284,
+				298,
+				288,
+				283
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "8a429542-dca2-499d-b441-7263f96c2e6a",
+			"name": "Patch",
+			"url": "https://restful-booker.herokuapp.com/booking/:id",
+			"time": 288,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				283,
+				287,
+				284,
+				286,
+				288
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "1ea4a637-2ce7-4562-8197-ce5b931836c8",
+			"name": "Ping Server",
+			"url": "https://restful-booker.herokuapp.com/ping",
+			"time": 286,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Server Ping Workikng !! ": true,
+				"Response status code is 201": true,
+				"Content-Type header is 'text/plain'": false,
+				"Response time is less than 300ms": true,
+				"Response body matches the expected schema": true
+			},
+			"testPassFailCounts": {
+				"Server Ping Workikng !! ": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response status code is 201": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Content-Type header is 'text/plain'": {
+					"pass": 0,
+					"fail": 5
+				},
+				"Response time is less than 300ms": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response body matches the expected schema": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				282,
+				286,
+				285,
+				282,
+				286
+			],
+			"allTests": [
+				{
+					"Server Ping Workikng !! ": true,
+					"Response status code is 201": true,
+					"Content-Type header is 'text/plain'": false,
+					"Response time is less than 300ms": true,
+					"Response body matches the expected schema": true
+				},
+				{
+					"Server Ping Workikng !! ": true,
+					"Response status code is 201": true,
+					"Content-Type header is 'text/plain'": false,
+					"Response time is less than 300ms": true,
+					"Response body matches the expected schema": true
+				},
+				{
+					"Server Ping Workikng !! ": true,
+					"Response status code is 201": true,
+					"Content-Type header is 'text/plain'": false,
+					"Response time is less than 300ms": true,
+					"Response body matches the expected schema": true
+				},
+				{
+					"Server Ping Workikng !! ": true,
+					"Response status code is 201": true,
+					"Content-Type header is 'text/plain'": false,
+					"Response time is less than 300ms": true,
+					"Response body matches the expected schema": true
+				},
+				{
+					"Server Ping Workikng !! ": true,
+					"Response status code is 201": true,
+					"Content-Type header is 'text/plain'": false,
+					"Response time is less than 300ms": true,
+					"Response body matches the expected schema": true
+				}
+			]
+		}
+	],
+	"count": 5,
+	"totalTime": 8931,
+	"collection": {
+		"requests": [
+			{
+				"id": "c648fb89-87e6-40f1-a95c-d509db5ef245",
+				"method": "GET"
+			},
+			{
+				"id": "e4f30116-cb4a-4213-9b0f-83bfbc5e3fe1",
+				"method": "POST"
+			},
+			{
+				"id": "5261856f-9803-4300-b25c-4773285fcd10",
+				"method": "PUT"
+			},
+			{
+				"id": "8a429542-dca2-499d-b441-7263f96c2e6a",
+				"method": "PATCH"
+			},
+			{
+				"id": "1ea4a637-2ce7-4562-8197-ce5b931836c8",
+				"method": "GET"
+			}
+		]
+	}
+}
