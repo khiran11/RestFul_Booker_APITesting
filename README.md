@@ -1,5 +1,7 @@
 RestFul Booker API Collections
 
+Resource Link : https://restful-booker.herokuapp.com/apidoc/index.html
+
 This has the RestFul Booker API Collections Test Run Results.
 
 Screenshots for the same are being attached.
